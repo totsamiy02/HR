@@ -4,7 +4,6 @@ import { Home } from "../pages/Home";
 const AppRouter = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-
   </Routes>
 );
 

@@ -1,0 +1,36 @@
+.header {
+  background: var(--gradient-header);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.navButton {
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+}

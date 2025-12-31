@@ -1,0 +1,51 @@
+:root {
+  /* Цвета */
+  --color-bg: #ffffff;
+  --color-primary: #2563eb;
+  --color-primary-soft: #e6f1ff;
+  --color-accent: #f97316;
+  --color-text-main: #0f172a;
+  --color-text-muted: #475569;
+  --color-border: #e5e7eb;
+
+  /* Градиенты */
+  --gradient-header: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f4f8ff 50%,
+    #e8f1ff 100%
+  );
+
+  /* Шрифты */
+  --font-main: "Inter", system-ui, sans-serif;
+
+  /* Размеры */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,19 +1,17 @@
+import { Header } from "../components/header/header";
+import { Footer } from "../components/footer/footer";
 import type { ReactNode } from "react";
 
-interface Props {
+type MainLayoutProps = {
   children: ReactNode;
-}
-
-const MainLayout = ({ children }: Props) => {
-  return (
-    <div>
-      <header>
-        <h1>HR Система</h1>
-      </header>
-      <main>{children}</main>
-      <footer>© 2025 HR Project</footer>
-    </div>
-  );
 };
 
-export default MainLayout;
+export function MainLayout({ children }: MainLayoutProps) {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+}
